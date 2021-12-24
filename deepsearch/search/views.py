@@ -13,16 +13,20 @@ redis_cli = redis.StrictRedis()#建一个k-v映射池
 
 class IndexView(View):
     def get(self,request):
-        topn = redis_cli.zreverangebyscore("search_keywords_set","+inf","-inf",start=0,num=5)#提高推荐分，没有就建一个关键词，赋分为0
+        print(redis_cli)
+        redis_cli.set("fuck","u")
+        d = redis_cli.get('fuck')
+        print(d)
+        topn = redis_cli.zrevrangebyscore("search_keywords_set","+inf","-inf",start=0,num=5)#提高推荐分，没有就建一个关键词，赋分为0
         top_n = (word.decode() for word in topn)#转utf-8编码
-        return render(request, ".html",{"top_n":top_n})
+        return render(request, "index.html",{"top_n":top_n})
 class SearchView(View):
     def get(self, request):
         key_words = request.GET.get("key", "")#关键词
 
-        redis_cli.zincrby("search_keywords_set", key_words)#增加推荐度
+        #redis_cli.zincrby("search_keywords_set", key_words)#增加推荐度
 
-        topn = redis_cli.zreverangebyscore("search_keywords_set","+inf","-inf",start=0,num=5)
+        topn = redis_cli.zrevrangebyscore("search_keywords_set","+inf","-inf",start=0,num=5)
         top_n = (word.decode() for word in topn)
         page = request.GET.get("p", "")#页数（关键词也要传，且不变）
         try:
@@ -38,7 +42,7 @@ class SearchView(View):
                 "query": {
                     "multi_match": {
                         "query": key_words,
-                        "fields": ["journal", "title", "keywords","author","abstract"]
+                        "fields": ["标题", "作者", "关键词","期刊名称","摘要"]
                     }
                 },
                 "from": (page - 1) * 10,
@@ -47,13 +51,11 @@ class SearchView(View):
                     "pre_tags": ['<span class="keyWord">'],
                     "post_tags": ['</span>'],
                     "fields": {
-                        "title": {},
-                        "keywords": {},
+                        "标题":{}, "作者":{}, "关键词":{},"期刊名称":{},"摘要":{}
                     }
                 }
             }
         )
-
         end_time = datetime.now()
         last_seconds = (end_time - start_time).total_seconds()
         total_nums = response["hits"]["total"]
@@ -62,24 +64,24 @@ class SearchView(View):
         else:
             page_nums = int(total_nums / 10)
         hit_list = []
+       
         for hit in response["hits"]["hits"]:
-            hit_dict = {}
-            if "title" in hit["highlight"]:
-                hit_dict["title"] = "".join(hit["highlight"]["title"])
-            else:
-                hit_dict["title"] = hit["_source"]["title"]
-            if "keywords" in hit["highlight"]:
-                hit_dict["keywords"] = "".join(hit["highlight"]["keywords"])[:500]
-            else:
-                hit_dict["keywords"] = hit["_source"]["keywords"][:500]
+                hit_dict = {}
+                if "标题" in hit['highlight']:
+                    hit_dict["标题"] = "".join(hit['highlight']["标题"])
+                else:
+                    hit_dict["标题"] = hit["_source"]["标题"]
+                if "keywords" in hit["highlight"]:
+                    hit_dict["关键词"] = "".join(hit["highlight"]["关键词"])[:500]
+                else:
+                    hit_dict["关键词"] = hit["_source"]["关键词"][:500]
+                hit_dict["url"] = hit["_source"]["url"]
+                hit_dict["score"] = hit["_score"]
 
-            hit_dict["create_date"] = hit["_source"]["create_date"]
-            hit_dict["url"] = hit["_source"]["url"]
-            hit_dict["score"] = hit["_score"]
+                hit_list.append(hit_dict)
+        
 
-            hit_list.append(hit_dict)
-
-        return render(request, ".html", {"page": page,
+        return render(request, "index.html", {"page": page,
                                                "all_hits": hit_list,
                                                "key_words": key_words,
                                                "total_nums": total_nums,
@@ -103,4 +105,4 @@ class SearchSuggest(View):
                 source = match._source
                 re_datas.append(source["title"])
             result = json.dumps(re_datas)#返回建议
-            return render(request,'.html',{'result':result})
+            return render(request,'index.html',{'result':result})
