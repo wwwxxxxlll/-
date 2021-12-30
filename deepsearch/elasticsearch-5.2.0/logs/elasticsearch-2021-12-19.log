@@ -1,0 +1,51 @@
+[2021-12-19T22:38:18,031][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-19T22:38:18,287][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [186.4gb], net total_space [343.2gb], spins? [unknown], types [NTFS]
+[2021-12-19T22:38:18,288][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-19T22:38:18,291][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-19T22:38:18,294][INFO ][o.e.n.Node               ] version[5.2.0], pid[18048], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11/11+28]
+[2021-12-19T22:38:18,804][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-19T22:38:18,805][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-19T22:38:18,805][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-19T22:38:18,805][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-19T22:38:18,806][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-19T22:38:18,806][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-19T22:38:18,806][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-19T22:38:18,806][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-19T22:38:18,806][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-19T22:38:18,806][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-19T22:38:18,807][INFO ][o.e.p.PluginsService     ] [m45SoXP] no plugins loaded
+[2021-12-19T22:38:20,444][INFO ][o.e.n.Node               ] initialized
+[2021-12-19T22:38:20,444][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-19T22:38:21,629][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-19T22:38:24,696][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{fgFzHHT0Ty6skINmmnWB8w}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-19T22:38:24,718][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [0] indices into cluster_state
+[2021-12-19T22:38:25,326][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-19T22:38:25,326][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-19T23:06:38,402][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2021-12-19T23:06:38,403][INFO ][o.e.n.Node               ] [m45SoXP] stopping ...
+[2021-12-19T23:06:38,427][INFO ][o.e.n.Node               ] [m45SoXP] stopped
+[2021-12-19T23:06:38,428][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
+[2021-12-19T23:06:38,433][INFO ][o.e.n.Node               ] [m45SoXP] closed
+[2021-12-19T23:36:40,104][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-19T23:36:40,172][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [186.4gb], net total_space [343.2gb], spins? [unknown], types [NTFS]
+[2021-12-19T23:36:40,173][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-19T23:36:40,174][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-19T23:36:40,176][INFO ][o.e.n.Node               ] version[5.2.0], pid[23968], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11/11+28]
+[2021-12-19T23:36:41,696][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-19T23:36:41,696][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-19T23:36:41,697][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-19T23:36:41,697][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-19T23:36:41,698][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-19T23:36:41,698][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-19T23:36:41,698][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-19T23:36:41,698][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-19T23:36:41,699][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-19T23:36:41,699][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-19T23:36:41,699][INFO ][o.e.p.PluginsService     ] [m45SoXP] no plugins loaded
+[2021-12-19T23:36:43,614][INFO ][o.e.n.Node               ] initialized
+[2021-12-19T23:36:43,615][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-19T23:36:44,820][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-19T23:36:47,871][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{ocCM4YLjT1q1OcVcr8FYqA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-19T23:36:47,896][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [0] indices into cluster_state
+[2021-12-19T23:36:48,584][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-19T23:36:48,585][INFO ][o.e.n.Node               ] [m45SoXP] started

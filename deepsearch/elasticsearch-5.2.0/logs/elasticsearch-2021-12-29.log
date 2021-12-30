@@ -1,0 +1,258 @@
+[2021-12-29T10:34:43,250][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-29T10:34:43,311][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [179gb], net total_space [343.2gb], spins? [unknown], types [NTFS]
+[2021-12-29T10:34:43,311][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-29T10:34:43,360][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-29T10:34:43,362][INFO ][o.e.n.Node               ] version[5.2.0], pid[13848], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11/11+28]
+[2021-12-29T10:34:43,960][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-29T10:34:43,960][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-29T10:34:43,963][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-29T10:34:43,963][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-29T10:34:43,963][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-29T10:34:43,963][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-29T10:34:43,964][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-29T10:34:43,964][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-29T10:34:43,964][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-29T10:34:43,965][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-29T10:34:43,966][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-29T10:34:46,258][INFO ][o.e.n.Node               ] initialized
+[2021-12-29T10:34:46,259][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-29T10:34:47,566][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-29T10:34:50,634][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{U6uPS_cMQkK203AmrdNjgQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-29T10:34:50,679][INFO ][o.w.a.d.Monitor          ] try load config from D:\es\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-29T10:34:50,681][INFO ][o.w.a.d.Monitor          ] try load config from D:\es\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-29T10:34:50,886][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-29T10:34:50,887][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-29T10:34:50,895][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-29T10:34:51,015][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-29T10:34:51,339][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][1], [info][2]] ...]).
+[2021-12-29T10:34:51,453][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-29T10:34:51,453][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-29T10:48:16,969][INFO ][o.e.c.m.MetaDataCreateIndexService] [m45SoXP] [test] creating index, cause [api], templates [], shards [5]/[1], mappings [doc]
+[2021-12-29T10:48:40,541][INFO ][o.e.c.m.MetaDataDeleteIndexService] [m45SoXP] [test/sFx311meRry3RN28Lp2xkw] deleting index
+[2021-12-29T10:48:57,232][INFO ][o.e.c.m.MetaDataDeleteIndexService] [m45SoXP] [data/UtRXKpxNQn2TTWD8H5Kv3g] deleting index
+[2021-12-29T10:53:46,775][INFO ][o.e.c.m.MetaDataCreateIndexService] [m45SoXP] [data] creating index, cause [api], templates [], shards [5]/[1], mappings [doc]
+[2021-12-29T11:10:06,456][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2021-12-29T11:10:06,458][INFO ][o.e.n.Node               ] [m45SoXP] stopping ...
+[2021-12-29T11:10:06,937][INFO ][o.e.n.Node               ] [m45SoXP] stopped
+[2021-12-29T11:10:06,938][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
+[2021-12-29T11:10:06,965][INFO ][o.e.n.Node               ] [m45SoXP] closed
+[2021-12-29T13:47:59,388][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-29T13:47:59,674][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [632.4gb], net total_space [931.4gb], spins? [unknown], types [NTFS]
+[2021-12-29T13:47:59,674][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-29T13:47:59,877][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-29T13:47:59,885][INFO ][o.e.n.Node               ] version[5.2.0], pid[11504], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_301/25.301-b09]
+[2021-12-29T13:48:02,557][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-29T13:48:02,557][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-29T13:48:02,558][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-29T13:48:02,558][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-29T13:48:02,558][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-29T13:48:02,558][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-29T13:48:02,559][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-29T13:48:02,559][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-29T13:48:02,559][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-29T13:48:02,559][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-29T13:48:02,560][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-29T13:48:06,951][INFO ][o.e.n.Node               ] initialized
+[2021-12-29T13:48:06,951][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-29T13:48:09,311][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-29T13:48:12,349][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{1lqX4qKRQSarGOQK6LnCOA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-29T13:48:12,453][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-29T13:48:12,455][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-29T13:48:12,784][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-29T13:48:12,787][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-29T13:48:12,811][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-29T13:48:13,110][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-29T13:48:13,763][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-29T13:48:13,763][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-29T13:48:15,447][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][1]] ...]).
+[2021-12-29T14:55:33,937][INFO ][o.e.m.j.JvmGcMonitorService] [m45SoXP] [gc][4043] overhead, spent [315ms] collecting in the last [1s]
+[2021-12-29T15:17:18,272][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2021-12-29T15:17:18,276][INFO ][o.e.n.Node               ] [m45SoXP] stopping ...
+[2021-12-29T15:17:18,347][INFO ][o.e.n.Node               ] [m45SoXP] stopped
+[2021-12-29T15:17:18,348][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
+[2021-12-29T15:17:18,362][INFO ][o.e.n.Node               ] [m45SoXP] closed
+[2021-12-29T15:37:13,938][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-29T15:37:14,149][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [632.3gb], net total_space [931.4gb], spins? [unknown], types [NTFS]
+[2021-12-29T15:37:14,150][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-29T15:37:14,275][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-29T15:37:14,279][INFO ][o.e.n.Node               ] version[5.2.0], pid[20508], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_301/25.301-b09]
+[2021-12-29T15:37:16,100][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-29T15:37:16,101][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-29T15:37:16,101][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-29T15:37:16,101][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-29T15:37:16,101][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-29T15:37:16,101][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-29T15:37:16,102][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-29T15:37:16,102][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-29T15:37:16,102][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-29T15:37:16,102][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-29T15:37:16,103][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-29T15:37:20,355][INFO ][o.e.n.Node               ] initialized
+[2021-12-29T15:37:20,355][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-29T15:37:22,809][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-29T15:37:25,879][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{_Vxp0rumQpKaGtAQrOPZZA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-29T15:37:25,973][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-29T15:37:25,974][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-29T15:37:26,338][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-29T15:37:26,340][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-29T15:37:26,343][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-29T15:37:26,678][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-29T15:37:27,363][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-29T15:37:27,363][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-29T15:37:29,079][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][3]] ...]).
+[2021-12-29T16:44:33,277][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2021-12-29T16:44:33,339][INFO ][o.e.n.Node               ] [m45SoXP] stopping ...
+[2021-12-29T16:44:33,706][INFO ][o.e.m.j.JvmGcMonitorService] [m45SoXP] [gc][4029] overhead, spent [330ms] collecting in the last [1.2s]
+[2021-12-29T16:44:33,915][INFO ][o.e.n.Node               ] [m45SoXP] stopped
+[2021-12-29T16:44:33,916][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
+[2021-12-29T16:44:33,967][INFO ][o.e.n.Node               ] [m45SoXP] closed
+[2021-12-29T18:32:35,108][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-29T18:32:35,283][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [632.3gb], net total_space [931.4gb], spins? [unknown], types [NTFS]
+[2021-12-29T18:32:35,283][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-29T18:32:35,587][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-29T18:32:35,627][INFO ][o.e.n.Node               ] version[5.2.0], pid[1692], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_301/25.301-b09]
+[2021-12-29T18:32:38,248][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-29T18:32:38,250][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-29T18:32:38,250][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-29T18:32:38,250][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-29T18:32:38,250][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-29T18:32:38,250][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-29T18:32:38,251][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-29T18:32:38,251][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-29T18:32:38,251][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-29T18:32:38,251][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-29T18:32:38,252][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-29T18:32:42,370][INFO ][o.e.n.Node               ] initialized
+[2021-12-29T18:32:42,370][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-29T18:32:45,036][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-29T18:32:48,087][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{5xgkR9TuRLycbeFCs7aK-g}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-29T18:32:48,171][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-29T18:32:48,173][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-29T18:32:48,602][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-29T18:32:48,605][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-29T18:32:48,612][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-29T18:32:49,084][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-29T18:32:49,542][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-29T18:32:49,542][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-29T18:32:51,419][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][2]] ...]).
+[2021-12-29T19:09:01,085][INFO ][o.e.m.j.JvmGcMonitorService] [m45SoXP] [gc][2176] overhead, spent [293ms] collecting in the last [1.1s]
+[2021-12-29T19:56:53,891][INFO ][o.e.m.j.JvmGcMonitorService] [m45SoXP] [gc][5045] overhead, spent [505ms] collecting in the last [1.4s]
+[2021-12-29T21:04:04,061][WARN ][o.e.h.n.Netty4HttpServerTransport] [m45SoXP] caught exception while handling client http traffic, closing connection [id: 0x83b58849, L:/127.0.0.1:9200 - R:/127.0.0.1:61076]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:527) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:481) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.7.Final.jar:4.1.7.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+[2021-12-29T21:04:04,061][WARN ][o.e.h.n.Netty4HttpServerTransport] [m45SoXP] caught exception while handling client http traffic, closing connection [id: 0xc7d390f4, L:/127.0.0.1:9200 - R:/127.0.0.1:61379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:527) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:481) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.7.Final.jar:4.1.7.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+[2021-12-29T21:04:04,061][WARN ][o.e.h.n.Netty4HttpServerTransport] [m45SoXP] caught exception while handling client http traffic, closing connection [id: 0x387bcd97, L:/127.0.0.1:9200 - R:/127.0.0.1:61381]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:527) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:481) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.7.Final.jar:4.1.7.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+[2021-12-29T21:04:04,061][WARN ][o.e.h.n.Netty4HttpServerTransport] [m45SoXP] caught exception while handling client http traffic, closing connection [id: 0xd025907b, L:/127.0.0.1:9200 - R:/127.0.0.1:61383]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:527) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:481) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.7.Final.jar:4.1.7.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+[2021-12-29T21:04:04,061][WARN ][o.e.h.n.Netty4HttpServerTransport] [m45SoXP] caught exception while handling client http traffic, closing connection [id: 0x1aab8696, L:/127.0.0.1:9200 - R:/127.0.0.1:61385]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-buffer-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:527) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:481) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441) [netty-transport-4.1.7.Final.jar:4.1.7.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.7.Final.jar:4.1.7.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+[2021-12-29T21:04:22,324][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2021-12-29T21:04:22,336][INFO ][o.e.n.Node               ] [m45SoXP] stopping ...
+[2021-12-29T21:04:22,757][INFO ][o.e.n.Node               ] [m45SoXP] stopped
+[2021-12-29T21:04:22,759][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
+[2021-12-29T21:04:22,836][INFO ][o.e.n.Node               ] [m45SoXP] closed
+[2021-12-29T22:09:15,819][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-29T22:09:16,015][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [632.2gb], net total_space [931.4gb], spins? [unknown], types [NTFS]
+[2021-12-29T22:09:16,015][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-29T22:09:16,363][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-29T22:09:16,366][INFO ][o.e.n.Node               ] version[5.2.0], pid[22520], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_301/25.301-b09]
+[2021-12-29T22:09:17,810][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-29T22:09:17,810][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-29T22:09:17,810][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-29T22:09:17,811][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-29T22:09:17,811][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-29T22:09:17,811][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-29T22:09:17,811][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-29T22:09:17,811][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-29T22:09:17,812][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-29T22:09:17,812][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-29T22:09:17,812][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-29T22:09:21,376][INFO ][o.e.n.Node               ] initialized
+[2021-12-29T22:09:21,376][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-29T22:09:23,801][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-29T22:09:26,846][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{g_aoeXZVT3eIa5-fzRfCoQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-29T22:09:26,930][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-29T22:09:26,947][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-29T22:09:27,325][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-29T22:09:27,343][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-29T22:09:27,422][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-29T22:09:27,799][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-29T22:09:28,297][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-29T22:09:28,297][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-29T22:09:30,560][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][0]] ...]).

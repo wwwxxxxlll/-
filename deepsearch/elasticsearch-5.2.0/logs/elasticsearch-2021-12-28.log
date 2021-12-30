@@ -1,0 +1,34 @@
+[2021-12-28T22:13:46,870][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-28T22:13:46,960][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [179.1gb], net total_space [343.2gb], spins? [unknown], types [NTFS]
+[2021-12-28T22:13:46,961][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-28T22:13:47,007][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-28T22:13:47,016][INFO ][o.e.n.Node               ] version[5.2.0], pid[37788], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11/11+28]
+[2021-12-28T22:13:47,749][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-28T22:13:47,749][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-28T22:13:47,749][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-28T22:13:47,749][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-28T22:13:47,750][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-28T22:13:47,750][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-28T22:13:47,750][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-28T22:13:47,750][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-28T22:13:47,750][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-28T22:13:47,750][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-28T22:13:47,752][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-28T22:13:50,447][INFO ][o.e.n.Node               ] initialized
+[2021-12-28T22:13:50,448][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-28T22:13:51,672][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-28T22:13:54,732][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{anAmnFFcQ5OGCOT_Jg8JHw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-28T22:13:54,779][INFO ][o.w.a.d.Monitor          ] try load config from D:\es\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-28T22:13:54,780][INFO ][o.w.a.d.Monitor          ] try load config from D:\es\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-28T22:13:54,917][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-28T22:13:54,919][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-28T22:13:54,927][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-28T22:13:55,043][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-28T22:13:55,437][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][1]] ...]).
+[2021-12-28T22:13:55,510][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-28T22:13:55,511][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-28T22:31:06,988][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2021-12-28T22:31:06,990][INFO ][o.e.n.Node               ] [m45SoXP] stopping ...
+[2021-12-28T22:31:07,029][INFO ][o.e.n.Node               ] [m45SoXP] stopped
+[2021-12-28T22:31:07,030][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
+[2021-12-28T22:31:07,037][INFO ][o.e.n.Node               ] [m45SoXP] closed

@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url
 from django.contrib import admin
 from search.views import SearchSuggest, SearchView, IndexView
-
+from search import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', IndexView.as_view(), name="index"),
@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^suggest/$', SearchSuggest.as_view(), name="suggest"),
 
     url(r'^search/$', SearchView.as_view(), name="search"),
+    path('suggest_ajax',views.suggest_ajax)
 ]

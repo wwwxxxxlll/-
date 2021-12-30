@@ -1,12 +1,95 @@
+<!DOCTYPE HTML>
 <html>
-
 <head>
-<title>我的第一个 HTML 页面</title>
+<title>主页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/login.js"></script>
 </head>
-
 <body>
-<p>{{page}}</p>
-<p>{{all_hits}}</p>
-</body>
+<div class="index-banner">
+  <div class="header-top">
+	<div class="wrap">
+   		<div class="logo">
+			<!-- <a href="index.html"><img src="images/logo.png" alt=""/></a> -->
+		</div>
+		<div class="menu">
+			<a href="#" class="right_bt" id="activator"><img src="../static/images/nav_icon.png" alt=""></a>
+				<div class="box" id="box">
+				   <div class="box_content_center">
+					   <div class="menu_box_list">
+						   <ul>
+							   <li><a href="#">Home</a></li>
+							   <li class="active"><a href="#">About</a></li>
+							   <li><a href="#">Contact</a></li>
+							   <li><a href="#">404</a></li>
+						   </ul>
+						</div>
+						<a class="boxclose" id="boxclose"><img src="../static/images/close.png" alt=""></a>
+					  </div>
+					</div>
+			                 <script type="text/javascript">
+								var $ = jQuery.noConflict();
+									$(function() {
+										$('#activator').click(function(){
+												$('#box').animate({'top':'0px'},500);
+										});
+										$('#boxclose').click(function(){
+												$('#box').animate({'top':'-700px'},500);
+										});
+									});
+									$(document).ready(function(){
 
+									//Hide (Collapse) the toggle containers on load
+									$(".toggle_container").hide();
+
+									//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+									$(".trigger").click(function(){
+										$(this).toggleClass("active").next().slideToggle("slow");
+										return false; //Prevent the browser jump to the link anchor
+									});
+
+									});
+								</script>
+			         </div>
+			         <div class="clear"></div>
+		  </div>
+		</div>
+	    <div class="wmuSlider example1">
+			   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	<div class="banner-wrap">
+						<div class="cont span_2_of_3">
+						    <h1>Input text and enter,<br>You can find what you want.</h1>
+						     <div class="search_box">
+								<form action="/search/" method="get">
+								   <input type="text" class="searchInput" placeholder="猜你要查：{{ top_n }}" name="key">
+								   <input type="submit" value="">
+							    </form>
+			 				</div>
+						</div>
+					</div>
+				 </article>
+		  </div>
+                  <script src="../static/js/jquery.wmuSlider.js"></script>
+					<script>
+       				     $('.example1').wmuSlider();
+   					</script>
+   	   </div>
+   	   <div class="main">
+   	     <div class="content-top">
+   	      <div class="section1">
+				<div class="cont1 span_2_of_about">
+					<h3 class="m_1"><a href="#">Come and have a look!</a></h3>
+				</div>
+
+				<div class="clear"></div>
+		    </div>
+   	   	 </div>
+
+   	   </div>
+
+</body>
 </html>

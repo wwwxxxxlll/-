@@ -1,0 +1,76 @@
+[2021-12-25T00:38:53,291][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-25T00:38:53,371][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [185.6gb], net total_space [343.2gb], spins? [unknown], types [NTFS]
+[2021-12-25T00:38:53,371][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-25T00:38:53,417][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-25T00:38:53,419][INFO ][o.e.n.Node               ] version[5.2.0], pid[4184], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11/11+28]
+[2021-12-25T00:38:54,827][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalArgumentException: Plugin [analysis-ik] is incompatible with Elasticsearch [5.2.0]. Was designed for version [7.16.2]
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:108) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:292) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:131) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:297) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:232) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap.java:241) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:241) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) [elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) [elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) [elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) [elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) [elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) [elasticsearch-5.2.0.jar:5.2.0]
+[2021-12-25T00:38:54,830][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: Plugin [analysis-ik] is incompatible with Elasticsearch [5.2.0]. Was designed for version [7.16.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.cli.SettingCommand.execute(SettingCommand.java:54) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:89) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:82) ~[elasticsearch-5.2.0.jar:5.2.0]
+Caused by: java.lang.IllegalArgumentException: Plugin [analysis-ik] is incompatible with Elasticsearch [5.2.0]. Was designed for version [7.16.2]
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:108) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:292) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:131) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:297) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:232) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap.java:241) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:241) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) ~[elasticsearch-5.2.0.jar:5.2.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-5.2.0.jar:5.2.0]
+	... 6 more
+[2021-12-25T00:41:08,191][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-25T00:41:08,252][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [185.6gb], net total_space [343.2gb], spins? [unknown], types [NTFS]
+[2021-12-25T00:41:08,252][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-25T00:41:08,294][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-25T00:41:08,295][INFO ][o.e.n.Node               ] version[5.2.0], pid[30980], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/11/11+28]
+[2021-12-25T00:41:08,848][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-25T00:41:08,848][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-25T00:41:08,849][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-25T00:41:08,849][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-25T00:41:08,849][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-25T00:41:08,849][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-25T00:41:08,849][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-25T00:41:08,849][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-25T00:41:08,849][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-25T00:41:08,850][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-25T00:41:08,850][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-25T00:41:11,109][INFO ][o.e.n.Node               ] initialized
+[2021-12-25T00:41:11,109][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-25T00:41:12,272][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-25T00:41:15,336][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{MWtQdCkbTYahkqFv5kkPuA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-25T00:41:15,383][INFO ][o.w.a.d.Monitor          ] try load config from D:\es\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-25T00:41:15,385][INFO ][o.w.a.d.Monitor          ] try load config from D:\es\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-25T00:41:15,538][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-25T00:41:15,539][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-25T00:41:15,545][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-25T00:41:15,715][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-25T00:41:16,166][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-25T00:41:16,166][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-25T00:41:16,292][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][1]] ...]).
+[2021-12-25T00:41:19,621][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2021-12-25T00:41:19,622][INFO ][o.e.n.Node               ] [m45SoXP] stopping ...
+[2021-12-25T00:41:19,665][INFO ][o.e.n.Node               ] [m45SoXP] stopped
+[2021-12-25T00:41:19,666][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
+[2021-12-25T00:41:19,671][INFO ][o.e.n.Node               ] [m45SoXP] closed
