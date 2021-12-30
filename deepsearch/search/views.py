@@ -93,7 +93,8 @@ class SearchView(View):
                                                "total_nums": total_nums,
                                                "page_nums": page_nums,
                                                "last_seconds": last_seconds,
-                                               "top_n":top_n})
+                                               "top_n":top_n,
+                                                "time":last_seconds})
 class SearchSuggest(View):
     def get(self, request):
         key_words = request.GET.get('s', '')

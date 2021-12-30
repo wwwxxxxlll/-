@@ -695,3 +695,33 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 [2021-12-30T09:37:54,786][INFO ][o.e.n.Node               ] [m45SoXP] stopped
 [2021-12-30T09:37:54,789][INFO ][o.e.n.Node               ] [m45SoXP] closing ...
 [2021-12-30T09:37:54,818][INFO ][o.e.n.Node               ] [m45SoXP] closed
+[2021-12-30T09:55:59,116][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-12-30T09:55:59,478][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] using [1] data paths, mounts [[Data (D:)]], net usable_space [632gb], net total_space [931.4gb], spins? [unknown], types [NTFS]
+[2021-12-30T09:55:59,479][INFO ][o.e.e.NodeEnvironment    ] [m45SoXP] heap size [1.9gb], compressed ordinary object pointers [true]
+[2021-12-30T09:55:59,850][INFO ][o.e.n.Node               ] node name [m45SoXP] derived from node ID [m45SoXPQRoeOf2XUI9m7nQ]; set [node.name] to override
+[2021-12-30T09:55:59,859][INFO ][o.e.n.Node               ] version[5.2.0], pid[10404], build[24e05b9/2017-01-24T19:52:35.800Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_301/25.301-b09]
+[2021-12-30T09:56:01,779][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [aggs-matrix-stats]
+[2021-12-30T09:56:01,779][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [ingest-common]
+[2021-12-30T09:56:01,780][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-expression]
+[2021-12-30T09:56:01,780][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-groovy]
+[2021-12-30T09:56:01,780][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-mustache]
+[2021-12-30T09:56:01,780][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [lang-painless]
+[2021-12-30T09:56:01,781][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [percolator]
+[2021-12-30T09:56:01,781][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [reindex]
+[2021-12-30T09:56:01,781][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty3]
+[2021-12-30T09:56:01,781][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded module [transport-netty4]
+[2021-12-30T09:56:01,782][INFO ][o.e.p.PluginsService     ] [m45SoXP] loaded plugin [analysis-ik]
+[2021-12-30T09:56:08,119][INFO ][o.e.n.Node               ] initialized
+[2021-12-30T09:56:08,120][INFO ][o.e.n.Node               ] [m45SoXP] starting ...
+[2021-12-30T09:56:13,146][INFO ][o.e.t.TransportService   ] [m45SoXP] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-12-30T09:56:16,240][INFO ][o.e.c.s.ClusterService   ] [m45SoXP] new_master {m45SoXP}{m45SoXPQRoeOf2XUI9m7nQ}{OzU57nGHTzaCWPDoindTMQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2021-12-30T09:56:16,347][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\config\analysis-ik\IKAnalyzer.cfg.xml
+[2021-12-30T09:56:16,350][INFO ][o.w.a.d.Monitor          ] try load config from D:\sm-bighw\-\deepsearch\elasticsearch-5.2.0\plugins\ik\config\IKAnalyzer.cfg.xml
+[2021-12-30T09:56:16,938][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\mydict.dic
+[2021-12-30T09:56:16,941][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\single_word_low_freq.dic
+[2021-12-30T09:56:16,970][INFO ][o.w.a.d.Monitor          ] [Dict Loading] custom\ext_stopword.dic
+[2021-12-30T09:56:17,596][INFO ][o.e.g.GatewayService     ] [m45SoXP] recovered [2] indices into cluster_state
+[2021-12-30T09:56:19,395][INFO ][o.e.h.HttpServer         ] [m45SoXP] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-12-30T09:56:19,396][INFO ][o.e.n.Node               ] [m45SoXP] started
+[2021-12-30T09:56:23,001][INFO ][o.e.c.r.a.AllocationService] [m45SoXP] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[info][4]] ...]).
+[2021-12-30T10:11:43,426][INFO ][o.e.m.j.JvmGcMonitorService] [m45SoXP] [gc][934] overhead, spent [443ms] collecting in the last [1s]
